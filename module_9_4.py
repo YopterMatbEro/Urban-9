@@ -11,7 +11,7 @@ class MysticBall:
 
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        with open(file_name, '+a', encoding='utf-8') as f:
+        with open(file_name, 'w', encoding='utf-8') as f:
             for data in data_set:
                 f.write(f'{str(data)}\n')
 
